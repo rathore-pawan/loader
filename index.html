@@ -1,55 +1,36 @@
-<!doctype html>
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-		}
-		.fullsection{
-			height: 100vh;
-			background-color: cornflowerblue;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-			.class1{
-				height: 250px;
-				width: 250px;
-				background-color: #000;
-				position: absolute;
-				animation: vip 0.5s linear infinite;
-				border-radius: 40%;
+<!DOCTYPE html>
+<html lang="en">
 
-			}
-			.class2{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
 
-				height: 100px;
-				width: 100px;
-				background-color: #fff;
-				position: relative;
-				animation: vip 0.5s linear infinite;
-				border-radius: 40%; 
+<body>
+    <div class="container">
+        <img src="" alt="" srcset="" id="weather-icon">
+        <div id="location">Unable to Fetch Weather</div>
+        <div class="desc">No Information Available.</div>
+        <div class="weather">
+            <div class="c">Error</div>
+            <div class="circle"></div>
+            <div class="f">Error</div>
+        </div>
+        <div class="info">
+            <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
+            <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+        </div>
 
+    </div>
+    <script src="scripts.js"></script>
+</body>
 
-			}
-			@keyframes vip{
-				from{
-					transform: rotate(90deg)
-				}
-				to {
-					transform:rotate(180deg) ;
-				}	
-			}
-		</style>
-		<meta charset="utf-8">
-		<title>use of keyfram</title>
-	</head>
-	<body>
-	<section class="fullsection">
-		<div class="class1" id="class1id"></div>
-		<div class="class2" id="class2id"></div>
-	</section>
-	</body>
-	</html>
+</html>
